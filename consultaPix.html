@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Consulta PIX</h1>
+            <div class="form-group">
+                <label for="userName">Nome do Usuário:</label>
+                <select id="userName">
+                    <option value="">Selecione um usuário</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo:</label>
+                <select id="type">
+                    <option value="received">Recebido</option>
+                    <option value="sent">Enviado</option>
+                </select>
+            </div>
+            <button id="consultButton">Consultar PIX</button>
+            <div class="result" id="result">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Enviado por:</th>
+                            <th>Recebido por:</th>
+                            <th>Data de Criação</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpo-tabela">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="consultaPix.js"></script>
+    </body>   
+</html>
+
